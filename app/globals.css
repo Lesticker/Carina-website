@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base colors */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+
+    /* Copper theme colors */
+    --copper-light: 25 60% 80%;
+    --copper-mid: 25 60% 50%;
+    --copper-dark: 25 60% 25%;
+
+    /* UI elements */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    --primary: 25 60% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 25 30% 95%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 25 30% 95%;
+    --muted-foreground: 0 0% 0%;
+    --accent: 25 30% 90%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 25 30% 90%;
+    --input: 25 30% 90%;
+    --ring: 25 60% 50%;
+    --radius: 0.5rem;
+    --product-bg: 25 30% 95%;
+  }
+
+  .dark {
+    --background: 25 60% 10%;
+    --foreground: 0 0% 100%;
+
+    /* Copper theme colors in dark mode */
+    --copper-light: 25 40% 70%;
+    --copper-mid: 25 60% 50%;
+    --copper-dark: 25 60% 15%;
+
+    /* UI elements */
+    --card: 25 60% 15%;
+    --card-foreground: 25 30% 90%;
+    --popover: 25 60% 15%;
+    --popover-foreground: 25 30% 90%;
+    --primary: 25 60% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 25 30% 20%;
+    --secondary-foreground: 25 30% 90%;
+    --muted: 25 30% 20%;
+    --muted-foreground: 25 20% 70%;
+    --accent: 25 30% 25%;
+    --accent-foreground: 25 30% 90%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 25 30% 25%;
+    --input: 25 30% 25%;
+    --ring: 25 60% 50%;
+    --product-bg: 25 30% 20%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  .product-bg {
+    background-color: hsl(var(--product-bg));
+  }
+
+  /* Copper accent classes */
+  .bg-copper-light {
+    background-color: hsl(var(--copper-light));
+  }
+  .bg-copper-mid {
+    background-color: hsl(var(--copper-mid));
+  }
+  .bg-copper-dark {
+    background-color: hsl(var(--copper-dark));
+  }
+  .text-copper-light {
+    color: hsl(var(--copper-light));
+  }
+  .text-copper-mid {
+    color: hsl(var(--copper-mid));
+  }
+  .text-copper-dark {
+    color: hsl(var(--copper-dark));
+  }
+  .border-copper-light {
+    border-color: hsl(var(--copper-light));
+  }
+  .border-copper-mid {
+    border-color: hsl(var(--copper-mid));
+  }
+  .border-copper-dark {
+    border-color: hsl(var(--copper-dark));
+  }
+
+  /* Copper metallic effect */
+  .copper-metallic {
+    background: linear-gradient(135deg, #f0d6bc, #d68035, #a05010);
+    position: relative;
+  }
+
+  .copper-metallic::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 0.2) 100%
+    );
+    opacity: 0.7;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .copper-metallic:hover::before {
+    opacity: 0.8;
+  }
+}
