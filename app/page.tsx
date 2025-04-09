@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import type { Metadata } from "next"
 
@@ -25,6 +26,17 @@ export default function AboutPage() {
             <strong>Systemy rynnowe CARINA</strong> produkowane w Z.H.U.P. CARINA to najtrwalsze systemy odwodnienia
             dachów
           </p>
+        </div>
+
+        {/* Hero image - rozciągnięte na całą szerokość bez dodatkowego tła */}
+        <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] overflow-hidden rounded-lg">
+          <Image
+            src="/images/hero-gutter.jpg"
+            alt="Systemy rynnowe Carina - miedziane z logo firmowym"
+            fill
+            className="object-cover object-[center_35%]"
+            priority
+          />
         </div>
 
         <div className="prose prose-lg max-w-none">

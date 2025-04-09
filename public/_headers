@@ -1,0 +1,18 @@
+/robots.txt
+  Cache-Control: no-cache
+  X-Robots-Tag: all
+
+/sitemap.xml
+  Cache-Control: no-cache
+
+/favicon.ico
+  Content-Type: image/x-icon
+  Cache-Control: public, max-age=604800, immutable
+
+/favicon.png
+  Content-Type: image/png
+  Cache-Control: public, max-age=604800, immutable
+
+/apple-icon.png
+  Content-Type: image/png
+  Cache-Control: public, max-age=604800, immutable
