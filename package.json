@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postbuild": "if [ \"$NETLIFY\" != \"true\" ]; then next-sitemap; fi"
+    "postbuild": "node -e \"if (process.env.NETLIFY !== 'true') require('child_process').execSync('npx next-sitemap', {stdio: 'inherit'})\""
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
