@@ -8,6 +8,7 @@ import Footer from "@/components/footer"
 import CallBar from "@/components/call-bar"
 import ScrollToTop from "@/components/scroll-to-top"
 import CookieConsent from "@/components/cookie-consent"
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ["latin", "latin-ext"] })
 
@@ -68,7 +69,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/favicon.png", // Używamy logo jako obrazu OG
+        url: "/favicon.png",
         width: 512,
         height: 512,
         alt: "Carina - Systemy Rynnowe",
@@ -79,10 +80,10 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Carina - Producent Rynien i Systemów Rynnowych",
     description: "Producent wysokiej jakości systemów rynnowych, parapetów i sztachetek metalowych.",
-    images: ["/favicon.png"], // Używamy logo jako obrazu Twitter
+    images: ["/favicon.png"],
   },
   verification: {
-    google: "verification_token", // Replace with actual Google verification token
+    google: "verification_token", // Zastąp swoim kodem weryfikacyjnym jeśli chcesz
   },
   category: "business",
 }
@@ -99,6 +100,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl" suppressHydrationWarning>
+      <head>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-MCZRXR5QP3');
+          `}
+        </Script>
+      </head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
