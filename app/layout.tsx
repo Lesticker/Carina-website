@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     images: ["/favicon.png"],
   },
   verification: {
-    google: "verification_token", // Zastąp swoim kodem weryfikacyjnym jeśli chcesz
+    google: "verification_token",
   },
   category: "business",
 }
@@ -114,6 +114,17 @@ export default function RootLayout({
             gtag('config', 'G-MCZRXR5QP3');
           `}
         </Script>
+        
+        {/* Organization Structured Data for Google */}
+        <Script type="application/ld+json" id="organization-schema" strategy="afterInteractive">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Carina",
+            "url": "https://www.carina.czest.pl",
+            "logo": "https://www.carina.czest.pl/favicon.png"
+    })}
+  </Script>
       </head>
       <body className={inter.className}>
         <ThemeProvider
