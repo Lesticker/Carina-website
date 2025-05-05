@@ -38,11 +38,44 @@ export function getCategories(): Category[] {
           description: "Element systemu rynnowego służący do odprowadzania wody z rynny do rury spustowej.",
         },
         {
+          name: "Kosz zlewowy",
+          materials: ["miedź", "cynk", "stal ocynkowana", "ocynk malowany proszkowo"],
+          sizes: ["250/80", "280/80", "280/100", "333/100", "333/120", "400/150"],
+          image:
+          "/images/produkty/Rynny_i_elementy_spustowe/kosz1-removebg.png",
+          description: "Element systemu rynnowego służący do odprowadzania wody z rynny do rury spustowej.",
+        },
+        {
+          name: "Kosz zlewowy",
+          materials: ["miedź", "cynk", "stal ocynkowana", "ocynk malowany proszkowo"],
+          sizes: ["250/80", "280/80", "280/100", "333/100", "333/120", "400/150"],
+          image:
+          "/images/produkty/Rynny_i_elementy_spustowe/kosz2-removebg.png",
+          description: "Element systemu rynnowego służący do odprowadzania wody z rynny do rury spustowej.",
+        },
+        {
+          name: "Kosz zlewowy",
+          materials: ["miedź", "cynk", "stal ocynkowana", "ocynk malowany proszkowo"],
+          sizes: ["250/80", "280/80", "280/100", "333/100", "333/120", "400/150"],
+          image:
+          "/images/produkty/Rynny_i_elementy_spustowe/kosz5-removebg.png",
+          description: "Element systemu rynnowego służący do odprowadzania wody z rynny do rury spustowej.",
+        },
+        {
           name: "Narożnik zew./wew.",
           materials: ["miedź", "cynk", "stal ocynkowana", "ocynk malowany proszkowo"],
           sizes: ["250", "280", "333"],
           image:
             "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/o3-removebg-preview-x3Zb8VP6RB2UIoG2FkadzTUEm4TWXG.png",
+          description:
+            "Element łączący odcinki rynny na narożnikach budynku, dostępny w wersji wewnętrznej i zewnętrznej.",
+        },
+        {
+          name: "Narożnik zew./wew.",
+          materials: ["miedź", "cynk", "stal ocynkowana", "ocynk malowany proszkowo"],
+          sizes: ["250", "280", "333"],
+          image:
+          "/images/produkty/Rynny_i_elementy_spustowe/naroznik2-removebg.png",
           description:
             "Element łączący odcinki rynny na narożnikach budynku, dostępny w wersji wewnętrznej i zewnętrznej.",
         },
@@ -63,11 +96,27 @@ export function getCategories(): Category[] {
           description: "Element umożliwiający zbieranie wody deszczowej do dalszego wykorzystania.",
         },
         {
+          name: "Łapacz wody",
+          materials: ["miedź", "cynk", "stal ocynkowana", "ocynk malowany proszkowo"],
+          sizes: ["fi 80", "fi 100", "fi 120", "fi 150"],
+          image:
+          "/images/produkty/Rynny_i_elementy_spustowe/lapacz1-removebg.png",
+          description: "Element umożliwiający zbieranie wody deszczowej do dalszego wykorzystania.",
+        },
+        {
           name: "Kolano tłoczone",
           materials: ["miedź", "cynk", "stal ocynkowana", "ocynk malowany proszkowo"],
           sizes: ["72*/80", "72*/100", "72*/120"],
           image:
             "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/o10-removebg-preview-4hcRQOhoWv5vOWNVbmBYXJDCVs3OWE.png",
+          description: "Element zmieniający kierunek spływu wody w rurze spustowej.",
+        },
+        {
+          name: "Kolano tłoczone",
+          materials: ["miedź", "cynk", "stal ocynkowana", "ocynk malowany proszkowo"],
+          sizes: ["72*/80", "72*/100", "72*/120"],
+          image:
+          "/images/produkty/Rynny_i_elementy_spustowe/kolanko1-removebg.png",
           description: "Element zmieniający kierunek spływu wody w rurze spustowej.",
         },
         {
@@ -126,6 +175,46 @@ export function getCategories(): Category[] {
           description: "Element mocujący rurę spustową do ściany budynku.",
         },
         {
+          name: "Obejma rury",
+          materials: ["miedź", "stal ocynkowana", "ocynk malowany proszkowo"],
+          sizes: ["fi 80", "fi 100", "fi 120", "fi 150"],
+          image:
+          "/images/produkty/Akcesoria/obejma1-removebg-preview.png",
+          description: "Element mocujący rurę spustową do ściany budynku.",
+        },
+        {
+          name: "Obejma rury",
+          materials: ["miedź", "stal ocynkowana", "ocynk malowany proszkowo"],
+          sizes: ["fi 80", "fi 100", "fi 120", "fi 150"],
+          image:
+          "/images/produkty/Akcesoria/obejma2-removebg-preview.png",
+          description: "Element mocujący rurę spustową do ściany budynku.",
+        },
+        {
+          name: "Obejma rury",
+          materials: ["miedź", "stal ocynkowana", "ocynk malowany proszkowo"],
+          sizes: ["fi 80", "fi 100", "fi 120", "fi 150"],
+          image:
+          "/images/produkty/Akcesoria/obejma3-removebg-preview.png",
+          description: "Element mocujący rurę spustową do ściany budynku.",
+        },
+        {
+          name: "Obejma rury",
+          materials: ["miedź", "stal ocynkowana", "ocynk malowany proszkowo"],
+          sizes: ["fi 80", "fi 100", "fi 120", "fi 150"],
+          image:
+          "/images/produkty/Akcesoria/obejma5-removebg-preview.png",
+          description: "Element mocujący rurę spustową do ściany budynku.",
+        },
+        {
+          name: "Łącznik rynny",
+          materials: ["stal ocynkowana"],
+          sizes: ["fi 105", "fi 127", "fi 153"],
+          image:
+          "/images/produkty/Akcesoria/obejma7-removebg-preview.png",
+          description: "Element mocujący rurę spustową do ściany budynku.",
+        },
+        {
           name: "Uchwyt rynny doczołowy",
           materials: ["miedź", "stal ocynkowana", "ocynk malowany proszkowo"],
           sizes: ["105 = 8tiy", "127 = 7tiy", "153 = 6tiy", "192 = 5tiy"],
@@ -154,6 +243,14 @@ export function getCategories(): Category[] {
           sizes: ["Robiony na zamówienie"],
           image:
             "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/o9-removebg-preview-Z3Om3gx0wmBxd917hzOWTcgVs3e8qc.png",
+          description: "Ozdobne zwieńczenie komina chroniące przed opadami atmosferycznymi.",
+        },
+        {
+          name: "Kapelusz napoleoński",
+          materials: ["miedź", "stal nierdzewna"],
+          sizes: ["Robiony na zamówienie"],
+          image:
+          "/images/produkty/akcesoria wentylacyjne/kapelusz3-removebg-preview.png",
           description: "Ozdobne zwieńczenie komina chroniące przed opadami atmosferycznymi.",
         },
         {

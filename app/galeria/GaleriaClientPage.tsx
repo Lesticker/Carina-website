@@ -6,8 +6,12 @@ import { useState } from "react"
 import { Dialog, DialogContent } from "@/components/ui/dialog"
 import { X } from "lucide-react"
 
-// All images for the gallery
+// All images for the gallery 
 const galleryImages = [
+  {
+    src: "/images/ulotka-removebg.png",
+    alt: "ulotka firmy CARINA, rynny częstochowa",
+  },
   {
     src: "/images/pokaz4.jpg",
     alt: "Systemy rynnowe z miedzi i tytan-cynku",
@@ -17,8 +21,28 @@ const galleryImages = [
     alt: "Ekspozycja parapetów i systemów rynnowych",
   },
   {
-    src: "/images/pokaz1.jpg",
-    alt: "Magazyn obróbek blacharskich",
+    src: "/images/wieza1.jpg",
+    alt: "wieża kościelna",
+  },
+  {
+    src: "/images/wieza2.jpg",
+    alt: "Ekspozycja wieży kościelnej",
+  },
+  {
+    src: "/images/foliowane1.jpg",
+    alt: "rynny częstochowa gotowe do wysyłki",
+  },
+  {
+    src: "/images/kapelusz4.jpg",
+    alt: "Kapelusz napoleoński, deflektory i inne rynny częstochowa",
+  },
+  {
+    src: "/images/kapelusz7.jpg",
+    alt: "Kapelusz napoleoński",
+  },
+  {
+    src: "/images/kapelusz8.jpg",
+    alt: "Kapelusz napoleoński",
   },
   {
     src: "/images/pokaz2.jpg",
@@ -49,6 +73,18 @@ const galleryImages = [
     alt: "Magazyn elementów wentylacyjnych i rur",
   },
   {
+    src: "/images/kosz4.jpg",
+    alt: "Kosz zlewowy",
+  },
+  {
+    src: "/images/lapacz1.jpg",
+    alt: "łapacz wody",
+  },
+  {
+    src: "/images/akcesoria1.jpg",
+    alt: "Akcesoria, czapki i inne",
+  },
+  {
     src: "/images/targi1.jpg",
     alt: "Stoisko targowe firmy Carina",
   },
@@ -56,14 +92,8 @@ const galleryImages = [
     src: "/images/targi2.jpg",
     alt: "Przedstawiciele firmy na targach budowlanych",
   },
-  {
-    src: "/images/targi4.jpg",
-    alt: "Prezentacja systemów rynnowych na targach",
-  },
-  {
-    src: "/images/targi5.jpg",
-    alt: "Stoisko z systemami rynnowymi Carina",
-  },
+
+
   {
     src: "/images/targi3.jpg",
     alt: "Nagrywanie materiału promocyjnego na targach",
